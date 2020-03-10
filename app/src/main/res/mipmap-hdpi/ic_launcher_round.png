@@ -1,0 +1,37 @@
+The target system is: Android - 1 - x86_64
+The host system is: Windows - 10.0.18362 - AMD64
+Determining if the C compiler works passed with the following output:
+Change Dir: F:/TextJPEG/app/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command:"E:\android-sdk_r24.4.1-windows\android-sdk-windows\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_22e71"
+[1/2] Building C object CMakeFiles/cmTC_22e71.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_22e71
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: F:/TextJPEG/app/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command:"E:\android-sdk_r24.4.1-windows\android-sdk-windows\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_f9a12"
+[1/2] Building C object CMakeFiles/cmTC_f9a12.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_f9a12
+Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
+Target: x86_64-none-linux-android24
+Thread model: posix
+InstalledDir: E:\android-sdk_r24.4.1-windows\android-sdk-windows\ndk\20.1.5948944\toolchains\llvm\prebuilt\windows-x86_64\bin
+Found candidate GCC installation: E:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x
+Found candidate GCC installation: E:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android\4.9.x
+Selected GCC installation: E:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "E:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin\\ld" --sysroot=E:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_f9a12 "E:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/24\\crtbegin_dynamic.o" "-LE:\\android-sdk_r24.4.1-windows\\android-sdk-windows\\ndk\\20.1.5948944\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\lib\\linux\\x86_64" -LE:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x -LE:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -LE:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/24 -LE:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android -LE:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -LE:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_f9a12.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "E:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/x86_64-linux-android/24\\crtend_android.o"
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(x86_64-linux-android-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: F:/TextJPEG/app/.cxx/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"E:\android-sdk_r24.4.1-windows\android-sdk-windows\cmake\3.10.2.4988404\bin\ninja.exe" "cmTC_f9a12"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_f9a12.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_f9a12]
+  ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
+  ignore line: [Target: x86_64-none-linux-an

@@ -1,0 +1,67 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "F:\\TextJPEG",
+      "sdkFolder": "E:\\android-sdk_r24.4.1-windows\\android-sdk-windows",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "F:\\TextJPEG\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "F:\\TextJPEG\\app",
+      "makeFile": "F:\\TextJPEG\\app\\src\\main\\cpp\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "F:\\TextJPEG\\.cxx",
+      "cxxFolder": "F:\\TextJPEG\\app\\.cxx",
+      "ndkFolder": "E:\\android-sdk_r24.4.1-windows\\android-sdk-windows\\ndk\\20.1.5948944",
+      "ndkVersion": "20.1.5948944",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      ""
+    ],
+    "variantName": "debug",
+    "soFolder": "F:\\TextJPEG\\app\\build\\intermediates\\cmake\\debug\\lib",
+    "objFolder": "F:\\TextJPEG\\app\\build\\intermediates\\cmake\\debug\\obj",
+    "jsonFolder": "F:\\TextJPEG\\app\\.cxx\\cmake\\debug",
+    "gradleBuildOutputFolder": "F:\\TextJPEG\\app\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 24,
+  "cxxBuildFolder": "F:\\TextJPEG\\app\\.cxx\\cmake\\debug\\x86_64",
+  "jsonFile": "F:\\TextJPEG\\app\\.cxx\\cmake\\debug\\x86_64\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "F:\\TextJPEG\\app\\.cxx\\cxx\\debug\\x86_64",
+  "objFolder": "F:\\TextJPEG\\app\\build\\intermediates\\cmake\\debug\\obj\\x86_64",
+  "buildCommandFile": "F:\\TextJPEG\\app\\.cxx\\cmake\\debug\\x86_64\\build_command.txt",
+  "buildOutputFile": "F:\\TextJPEG\\app\\.cxx\\cmake\\debug\\x86_64\\build_output.txt",
+  "modelOutputFile": "F:\\TextJPEG\\app\\.cxx\\cmake\\debug\\x86_64\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "F:\\TextJPEG\\app\\.cxx\\cxx\\debug\\x86_64\\CMakeLists.txt",
+    "toolchainWrapperFile": "F:\\TextJPEG\\app\\.cxx\\cxx\\debug\\x86_64\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "F:\\TextJPEG\\app\\.cxx\\cxx\\debug\\x86_64\\build_generation_state.json",
+    "cacheKeyFile": "F:\\TextJPEG\\app\\.cxx\\cxx\\debug\\x86_64\\compiler_cache_key.json",
+    "compilerCacheUseFile": "F:\\TextJPEG\\app\\.cxx\\cxx\\debug\\x86_64\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "F:\\TextJPEG\\app\\.cxx\\cxx\\debug\\x86_64\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "F:\\TextJPEG\\app\\.cxx\\cxx\\debug\\x86_64\\compiler_se
