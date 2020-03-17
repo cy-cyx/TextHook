@@ -1,3 +1,14 @@
-set(CMAKE_C_COMPILER "E:/android-sdk_r24.4.1-windows/android-sdk-windows/ndk/20.1.5948944/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe")
-set(CMAKE_C_COMPILER_ARG1 "")
-set(CMAKE_C_COMPILER_ID "Clang
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
