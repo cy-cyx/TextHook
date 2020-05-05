@@ -9,6 +9,6 @@ package com.example.hook;
 public class MyBuy implements IShop {
     @Override
     public void buy() {
-        System.out.print("maimaimia");
+        System.out.print("真正的买东西");
     }
 }

@@ -26,10 +26,8 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.List;
 
-/**
- * #I# 无注册启动activity，hook，目前测试5.1、6.0、7.1.1、8.1、9.0都可以，10.0不行
- */
-public class MainActivity50 extends AppCompatActivity {
+public class Activity2 extends AppCompatActivity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,20 +35,20 @@ public class MainActivity50 extends AppCompatActivity {
         HookActivityUtils.getInstance().hooks(this);
         HookActivityUtils.getInstance().hookHandler();
 
-//        FrameLayout fr = new FrameLayout(this);
-//        setContentView(fr);
-//        {
-//            Button btn = new Button(this);
-//            btn.setText("TEST");
-//            FrameLayout.LayoutParams fl = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
-//            fl.gravity = Gravity.CENTER;
-//            fr.addView(btn, fl);
-//            btn.setOnClickListener((View view) -> {
-//                //getActivityClass(MainActivity50.this);
-//                Intent intent = new Intent(MainActivity50.this, ProxyActivity.class);
-//                startActivity(intent);
-//            });
-//        }
+        FrameLayout fr = new FrameLayout(this);
+        setContentView(fr);
+        {
+            Button btn = new Button(this);
+            btn.setText("TEST");
+            FrameLayout.LayoutParams fl = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+            fl.gravity = Gravity.CENTER;
+            fr.addView(btn, fl);
+            btn.setOnClickListener((View view) -> {
+                //getActivityClass(MainActivity50.this);
+                Intent intent = new Intent(Activity2.this, ProxyActivity.class);
+                startActivity(intent);
+            });
+        }
     }
 
     public static Class getActivityClass(Context context) {

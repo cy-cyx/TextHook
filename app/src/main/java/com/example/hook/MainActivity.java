@@ -14,8 +14,8 @@ import android.widget.FrameLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Class[] classes = new Class[]{Activity1.class};
-    private String[] names = new String[]{"简单的startActivity的Hook"};
+    private Class[] classes = new Class[]{Activity1.class, Activity2.class};
+    private String[] names = new String[]{"简单的startActivity的Hook", "不注册Activity"};
 
     private RecyclerView mRecyclerView;
 
