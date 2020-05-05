@@ -44,7 +44,8 @@ public class Activity2 extends AppCompatActivity {
             fl.gravity = Gravity.CENTER;
             fr.addView(btn, fl);
             btn.setOnClickListener((View view) -> {
-                //getActivityClass(MainActivity50.this);
+                Class activityClass = getActivityClass(Activity2.this);
+                Log.d("xx", "onCreate: " + activityClass.toString());
                 Intent intent = new Intent(Activity2.this, ProxyActivity.class);
                 startActivity(intent);
             });
@@ -74,7 +75,7 @@ public class Activity2 extends AppCompatActivity {
             List<ResolveInfo> list = packageManager.queryIntentActivities(intent, PackageManager.MATCH_ALL);
             if (list != null && list.size() > 0) {
                 result = Class.forName(list.get(0).activityInfo.name);
-                Log.i("MainActivity50 ", "===========activityList====== " + result);
+                Log.i("xx", "===========activityList====== " + result);
             }
         } catch (Throwable e) {
             e.printStackTrace();
@@ -85,7 +86,6 @@ public class Activity2 extends AppCompatActivity {
     }
 
     public static class HookActivityUtils {
-        private static final String TAG = "HookActivityUtils";
         private volatile static HookActivityUtils sHookActivityUtils;
 
         public static HookActivityUtils getInstance() {
@@ -157,7 +157,6 @@ public class Activity2 extends AppCompatActivity {
     }
 
     public static class ActivityManagerDelegate implements InvocationHandler {
-        private static final String TAG = "ActivityManagerDelegate";
         private Object mObject;
         private Context mContext;
 
@@ -170,7 +169,7 @@ public class Activity2 extends AppCompatActivity {
         public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
             if (method != null && "startActivity".equals(method.getName())) {
                 //拦截方法
-                Log.e(TAG, "i got you");
+                Log.e("xx", "i got you");
                 for (int i = 0; i < args.length; i++) {
                     if (args[i] instanceof Intent) {
                         Intent src = (Intent) args[i];
@@ -191,7 +190,6 @@ public class Activity2 extends AppCompatActivity {
     }
 
     public static class HookCallBack implements Handler.Callback {
-        private static final String TAG = "HookCallBack";
         private Handler mHandler;
 
         public HookCallBack(Handler mHandler) {
@@ -211,6 +209,7 @@ public class Activity2 extends AppCompatActivity {
         }
 
         private void handleHookMsg100(Message mMsg) {
+            Log.d("xx", "handleHookMsg100: " + mMsg.toString());
             Object obj = mMsg.obj;
             try {
                 Field intent = obj.getClass().getDeclaredField("intent");
@@ -225,15 +224,16 @@ public class Activity2 extends AppCompatActivity {
         }
 
         private void handleHookMsg159(Message mMsg) {
+            Log.d("xx", "handleHookMsg159: " + mMsg.toString());
             Object obj = mMsg.obj;
             try {
                 Field mActivityCallbacksField = obj.getClass().getDeclaredField("mActivityCallbacks");
                 mActivityCallbacksField.setAccessible(true);
                 List mActivityCallbacks = (List) mActivityCallbacksField.get(obj);
-                Log.i(TAG, "handleMessage: mActivityCallbacks= " + mActivityCallbacks);
+                Log.i("xx", "handleMessage: mActivityCallbacks= " + mActivityCallbacks);
 
                 if (mActivityCallbacks.size() > 0) {
-                    Log.i(TAG, "handleMessage: size= " + mActivityCallbacks.size());
+                    Log.i("xx", "handleMessage: size= " + mActivityCallbacks.size());
                     String className = "android.app.servertransaction.LaunchActivityItem";
                     if (mActivityCallbacks.get(0).getClass().getCanonicalName().equals(className)) {
                         Object object = mActivityCallbacks.get(0);
